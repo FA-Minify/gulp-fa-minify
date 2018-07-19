@@ -14,6 +14,7 @@ gulp.task('default', () => {
     fab: []
   };
 
+  // you need to copy the all.js file from FontAwesome 5 in this directory or change the gulp.src path
   return gulp.src('./all.js')
     .pipe(rename('all.cleared.js'))
     .pipe(faMinify(usedIcons))
