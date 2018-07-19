@@ -5,7 +5,7 @@ A utility Gulp plugin to remove unused Icons from [FontAwesome 5](https://fontaw
 The `all.js` or `all.min.js` files can lead to a bundle size increase of ~900kb.
 Only including the needed Icons can lead to a massive size reduction and performance increase.
 
-Example: Use it as a normal gulp plugin in your workflow:
+Use it as a normal gulp plugin in your workflow:
 ```javascript
   const usedIcons = {
     fal: [],
@@ -20,3 +20,8 @@ Example: Use it as a normal gulp plugin in your workflow:
     .pipe(gulp.dest('./'));
 ```
 (see: https://github.com/NetWin/fa-minify/blob/master/test/gulpfile.js)
+
+    
+    
+    
+**Attention:** Only works with the all.js file because this plugin uses regular expressions to find the defined icons. The minfied / mangled file makes this very hard
