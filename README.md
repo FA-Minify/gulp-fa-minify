@@ -24,4 +24,5 @@ Use it as a normal gulp plugin in your workflow:
     
     
     
-**Attention:** Only works with the `all.js` file because this plugin uses regular expressions to find the defined icons. The minfied / mangled file makes this very hard
+**Attention:** Only works with the `all.js` file because this plugin uses regular expressions to find the defined icons. 
+The minified / mangled `all.min.js` file makes this very hard.
