@@ -81,7 +81,6 @@
     }
 
     const addIcon = (type, name) => {
-      console.info('adding icon %s.%s', type, name);
       const parent = document.getElementById(type);
 
       const wrapper = document.createElement('div');
@@ -96,7 +95,6 @@
       const icon = document.createElement('i');
       icon.classList.add('icon', type, 'fa-' + name);
       wrapper.appendChild(icon);
-
     }
 
     Object.keys(icons).forEach(type => {

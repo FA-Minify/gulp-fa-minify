@@ -58,8 +58,6 @@ module.exports = function (usedIcons) {
           iconObject = {};
         }
         
-        console.info('type:' + type + ' iconObject: ', iconObject);
-
         // keep usedIcons and remove every other icon
         if (usedIcons[type]) {
           Object.keys(iconObject).forEach(key => {
@@ -68,7 +66,6 @@ module.exports = function (usedIcons) {
             }
           });
         }
-
 
         // return the code without unused icons
         return arguments[1] + JSON.stringify(iconObject) + arguments[3];
