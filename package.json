@@ -1,6 +1,6 @@
 {
   "name": "gulp-fa-minify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "remove unnecessary fa icons from font awesome 5 js files",
   "main": "index.js",
   "scripts": {
