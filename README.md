@@ -21,4 +21,4 @@ Use it as a normal gulp plugin in your workflow:
     
     
 **Attention:** Only works with the non minified JavaScript files because this plugin uses regular expressions to find the defined icons. 
-The minified / mangled files makes this very hard. But adding the [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) for example is a simple one-liner.
+But adding the [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) for example is a simple one-liner.
