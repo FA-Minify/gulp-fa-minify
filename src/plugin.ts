@@ -1,14 +1,16 @@
-const faMinify = require('fa-minify');
-const through = require('through2');
+import { Transform } from 'stream';
+import * as through from 'through2';
+import * as PluginError from 'plugin-error';
+import { removeUnusedIcons as faMinify, IconType } from 'fa-minify';
 
 const PLUGIN_NAME = 'gulp-fa-minify';
 
-module.exports = function (usedIcons) {
+export function plugin(usedIcons: { [type in IconType]?: string[] }) {
 
   usedIcons = usedIcons || {};
 
   // creating a stream through which each file will pass
-  const stream = through.obj(function (file, enc, cb) {
+  const stream: Transform = through.obj(function (file, enc, cb) {
 
     if (file.isNull()) {
       return cb();
@@ -21,7 +23,7 @@ module.exports = function (usedIcons) {
 
     if (file.isBuffer()) {
 
-      const content = file.contents.toString();
+      const content = file.contents.toString() as string;
       const minified = faMinify(content, { usedIcons });
 
       // set the fileContent
