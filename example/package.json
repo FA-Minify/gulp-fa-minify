@@ -4,10 +4,13 @@
   "authors": "NetWin",
   "version": "1.0.0",
   "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0",
+    "@fortawesome/fontawesome-free": "5.8.1",
     "gulp": "^4.0.0",
-    "gulp-fa-minify": " 1.0.1",
+    "gulp-fa-minify": "1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1"
   }
