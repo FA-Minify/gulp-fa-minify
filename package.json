@@ -4,7 +4,9 @@
   "description": "remove unnecessary fa icons from font awesome 5 js files",
   "main": "dist/index.js",
   "scripts": {
-    "test": "cd ./test && gulp"
+    "test": "cd ./example && gulp",
+    "clean": "rimraf dist",
+    "prepublish": "npm run clean && tsc"
   },
   "keywords": [
     "Gulp",
@@ -23,6 +25,9 @@
     "through2": "2.0.3"
   },
   "devDependencies": {
-    "@types/through2": "^2.0.33"
+    "@types/through2": "2.0.34",
+    "@types/node": "11.13.4",
+    "rimraf": "2.6.3",
+    "typescript": "3.4.3"
   }
 }
