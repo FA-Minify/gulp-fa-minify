@@ -7,19 +7,19 @@ const faMinify = require('gulp-fa-minify');
 gulp.task('default', () => {
 
   const usedIcons = {
-    fal: [],
+    fal: ['cogs'],
     far: ['copy'],
     fas: ['copy', 'cogs', 'address-book'],
-    fab: []
+    fab: ['twitch']
   };
 
   // we copy the default all.js file into the current folder just for comparison
-  gulp.src('./node_modules/@fortawesome/fontawesome-free/js/all.js')
+  gulp.src('./all.js')
     .pipe(rename('all.src.js'))
     .pipe(gulp.dest('./'));
 
 
-  return gulp.src('./node_modules/@fortawesome/fontawesome-free/js/all.js')
+  return gulp.src('./all.js')
     .pipe(rename('all.fa-min.js'))
     .pipe(faMinify(usedIcons))
     .pipe(uglify())
