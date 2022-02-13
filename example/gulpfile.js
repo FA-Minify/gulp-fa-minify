@@ -3,8 +3,6 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const faMinify = require('gulp-fa-minify');
 
-console.info(faMinify());
-
 gulp.task('default', () => {
 
   const usedIcons = {
