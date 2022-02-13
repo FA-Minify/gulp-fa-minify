@@ -8,10 +8,10 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "5.8.2",
-    "gulp": "^4.0.0",
-    "gulp-fa-minify": "1.2.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.1"
+    "@fortawesome/fontawesome-free": "6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-fa-minify": "1.2.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
   }
 }

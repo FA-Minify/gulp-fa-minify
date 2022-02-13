@@ -3,13 +3,14 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const faMinify = require('gulp-fa-minify');
 
+console.info(faMinify());
 
 gulp.task('default', () => {
 
   const usedIcons = {
-    fal: ['cogs'],
+    fas: ['copy', 'gears', 'address-book'],
+    fal: ['gears'],
     far: ['copy'],
-    fas: ['copy', 'cogs', 'address-book'],
     fab: ['twitch']
   };
 

@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2015",
-    "outDir": "dist",
-    "rootDir": "src",
+    "module": "ES6",
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "esModuleInterop": true,
     "declaration": true,
+    "sourceMap": true,
+    "strict": true
   },
+  "files": [
+    "./src/index.ts"
+  ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "dist",
+    "node_modules"
   ]
 }

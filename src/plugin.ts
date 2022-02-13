@@ -1,6 +1,6 @@
 import { Transform } from 'stream';
 import * as through from 'through2';
-import * as PluginError from 'plugin-error';
+import PluginError from 'plugin-error';
 import { removeUnusedIcons as faMinify, IconType } from 'fa-minify';
 
 const PLUGIN_NAME = 'gulp-fa-minify';
